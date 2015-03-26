@@ -9,5 +9,10 @@ class UIEngine(Engine):
 
     """
 
-    def __init__(self):
-        pass
+    def __init__(self, simu_launch):
+        self.simu_launch = simu_launch
+
+
+    def start(self):
+        # Test purpose
+        self.simu_launch(100, 10)

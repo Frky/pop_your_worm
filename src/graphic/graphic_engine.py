@@ -11,3 +11,13 @@ class GraphicEngine(Engine):
 
     def __init__(self):
         pass
+
+    
+    def launch(self, network):
+        """
+            Create a window to display the simulation
+
+            @param network is a list of all nodes 
+
+        """
+        pass

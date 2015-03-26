@@ -14,11 +14,12 @@ from src.graphic.graphic_engine import GraphicEngine
 class Simulation(object):
 
     def __init__(self):
-        ui = UIEngine()
-        simu = SimuEngine()
         graphic = GraphicEngine()
+        simu = SimuEngine(graphic)
+        ui = UIEngine(simu.launch)
 
     def start(self):
+        # Test purpose
         self.ui.start()
 
 simulation = Simulation()
